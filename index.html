@@ -8,40 +8,35 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
   <style>
-    body { font-family: 'Inter', sans-serif; }
+    body { 
+      font-family: 'Inter', sans-serif; 
+      margin: 0; /* Kill top/bottom white bars */
+      padding: 0;
+    }
     .gradient-bg { background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%); }
+    /* Extra centering lock for hero */
+    .hero-content { text-align: center !important; }
   </style>
 </head>
 <body class="text-gray-800 bg-gray-50">
 
   <!-- Hero Section -->
-  <header class="gradient-bg text-white py-20 px-6">
-   <img src="logo.png" alt="Cuevas Commercial Capital LLC" class="h-20 md:h-24 mx-auto mb-6 -mt-8 bg-white rounded-full p-3 shadow-2xl">
-    <div class="max-w-6xl mx-auto text-center pt-4 pb-12">
-  <!-- Logo (if uploaded; otherwise comment out the img line) -->
-  <img src="logo.png" alt="Cuevas Commercial Capital LLC" class="h-20 md:h-24 mx-auto mb-6 bg-white rounded-full p-3 shadow-2xl inline-block">
-  <h1 class="text-4xl md:text-6xl font-bold mb-6">
-    Cuevas Commercial Capital LLC
-  </h1>
-  <p class="text-xl md:text-2xl mb-8 opacity-90">
-    Your Nationwide Commercial Loan Broker<br>
-    <span class="text-lg md:text-xl">We Get Deals Closed – Fast & Profitably</span>
-  </p>
-  <div class="space-x-4">
-    <a href="tel:8184861916" class="bg-white text-blue-900 hover:bg-gray-100 px-8 py-4 rounded-lg font-bold text-lg inline-block">Call (818) 486-1916</a>
-    <a href="#contact" class="border-2 border-white hover:bg-white hover:text-blue-900 px-8 py-4 rounded-lg font-bold text-lg inline-block">Get Pre-Qualified</a>
-  </div>
-</div>
-      <h1 class="text-4xl md:text-6xl font-bold mb-6">
-        Cuevas Commercial Capital LLC
-      </h1>
-      <p class="text-xl md:text-2xl mb-8 opacity-90">
-        Your Nationwide Commercial Loan Broker<br>
-        <span class="text-lg md:text-xl">We Get Deals Closed – Fast & Profitably</span>
-      </p>
-      <div class="space-x-4">
-        <a href="tel:8184861916" class="bg-white text-blue-900 hover:bg-gray-100 px-8 py-4 rounded-lg font-bold text-lg inline-block">Call (818) 486-1916</a>
-        <a href="#contact" class="border-2 border-white hover:bg-white hover:text-blue-900 px-8 py-4 rounded-lg font-bold text-lg inline-block">Get Pre-Qualified</a>
+  <header class="gradient-bg text-white">
+    <div class="max-w-6xl mx-auto text-center pt-0 pb-8 px-6"> <!-- Tighter padding, no top gap -->
+      <!-- Logo (add if uploaded; comment out if not) -->
+      <!-- <img src="logo.png" alt="Cuevas Commercial Capital LLC" class="h-20 md:h-24 mx-auto mb-6 bg-white rounded-full p-3 shadow-2xl inline-block"> -->
+      <div class="hero-content">
+        <h1 class="text-4xl md:text-6xl font-bold mb-6">
+          Cuevas Commercial Capital LLC
+        </h1>
+        <p class="text-xl md:text-2xl mb-8 opacity-90">
+          Your Nationwide Commercial Loan Broker<br>
+          <span class="text-lg md:text-xl">We Get Deals Closed – Fast & Profitably</span>
+        </p>
+        <div class="space-x-4 inline-flex flex-col sm:flex-row justify-center items-center gap-4">
+          <a href="tel:8184861916" class="bg-white text-blue-900 hover:bg-gray-100 px-8 py-4 rounded-lg font-bold text-lg inline-block">Call (818) 486-1916</a>
+          <a href="#contact" class="border-2 border-white hover:bg-white hover:text-blue-900 px-8 py-4 rounded-lg font-bold text-lg inline-block">Get Pre-Qualified</a>
+        </div>
       </div>
     </div>
   </header>
@@ -51,7 +46,7 @@
     <div class="max-w-5xl mx-auto text-center">
       <h2 class="text-3xl md:text-4xl font-bold mb-8">One Call. Every Lender. Best Terms.</h2>
       <p class="text-lg leading-relaxed max-w-3xl mx-auto">
-        As an independent nationwide commercial loan broker, we shop hundreds of private lenders, banks, credit unions, and alternative financiers so you don't have to. 
+        As an independent nationwide commercial loan broker, we shop hundreds of private lenders, banks, credit unions, and alternative financiers so you don’t have to. 
         We specialize in getting you the highest leverage, lowest rates, and fastest closings — while earning broker fees on every deal.
       </p>
     </div>
@@ -116,7 +111,7 @@
           <h3 class="text-2xl font-bold mb-4 text-blue-900">Special Situations</h3>
           <ul class="list-disc list-inside space-y-2 text-gray-700">
             <li>Bridge & Hard Money Loans</li>
-            <li>Non-Arm's Length Transactions</li>
+            <li>Non-Arm’s Length Transactions</li>
             <li>Bank Turndowns & Credit Challenges</li>
             <li>Foreign National Investors</li>
             <li>100% Financing (with cross-collateral)</li>
@@ -165,9 +160,9 @@
   <!-- CTA / Contact -->
   <section id="contact" class="py-20 px-6 bg-white">
     <div class="max-w-4xl mx-auto text-center">
-      <h2 class="text-3xl md:text-4xl font-bold mb-8">Let's Get Your Deal Funded</h2>
+      <h2 class="text-3xl md:text-4xl font-bold mb-8">Let’s Get Your Deal Funded</h2>
       <p class="text-xl mb-10">Call or submit your scenario today — most quotes returned same day.</p>
-      <div class="space-x-4 mb-8">
+      <div class="space-x-4 mb-8 inline-flex flex-col sm:flex-row justify-center items-center gap-4">
         <a href="tel:8184861916" class="bg-blue-900 text-white hover:bg-blue-800 px-10 py-5 rounded-lg font-bold text-xl">Call (818) 486-1916</a>
         <a href="mailto:bizloanstexas@gmail.com" class="bg-gray-800 text-white hover:bg-gray-700 px-10 py-5 rounded-lg font-bold text-xl">Email Us</a>
       </div>
